@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game Rintangan</title>
+  </head>
+  <body onload="startGame()">
+   
+   <br>
+   <br>
+   
+    <div class="btn">
+      <button
+        onmousedown="moveup()"
+        onmouseup="clearmove()"
+        ontouchstart="moveup()"
+      >
+        <div class="up"></div></button
+      ><br /><br />
+      <button
+        onmousedown="moveleft()"
+        onmouseup="clearmove()"
+        ontouchstart="moveleft()"
+      >
+        <div class="left"></div>
+      </button>
+      <button
+        onmousedown="moveright()"
+        onmouseup="clearmove()"
+        ontouchstart="moveright()"
+      >
+        <div class="right"></div></button
+      ><br /><br />
+      <button
+        onmousedown="movedown()"
+        onmouseup="clearmove()"
+        ontouchstart="movedown()"
+      >
+        <div class="down"></div>
+      </button>
+    </div>
+    <div class="restart">
+          <button onclick="restartGame()">Restart</button>
+    
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
